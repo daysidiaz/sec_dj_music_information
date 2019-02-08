@@ -1,0 +1,69 @@
+.musician {
+
+  &__nation {
+
+    padding: 8rem 0 3rem;
+  }
+
+  &__nationcontent {
+
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 1.5rem;
+  }
+
+  &__nationboxes {
+
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 383px;
+
+    .nationimages {
+
+        position: relative;
+    }
+  }
+
+  &__nationbox {
+
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    .nationdate {
+
+      color: #514d48;
+      font-size: 14px;
+      font-weight: 800;
+      border-bottom: 2px #514d48 solid;
+      padding: 0 0 10px;
+    }
+
+    .nationname {
+
+      color: #fff;
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 10px 0 0;
+    }
+
+    .nationtitle {
+
+      color: #000;
+      font-size: 23px;
+      letter-spacing: 1px;
+      padding: 2rem 0;
+    }
+
+    .nationtext {
+
+      color: #798285;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+  }
+}

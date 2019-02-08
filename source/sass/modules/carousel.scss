@@ -1,0 +1,83 @@
+.musician {
+
+  &__carousel {
+
+    background-image: url(../images/bg-singer-carousel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 7rem 0;
+
+  }
+
+  &__singer {
+
+    margin: 0 auto;
+    text-align: center;
+    width: 94%;
+
+    .singericon {
+
+      margin: 0 auto;
+      padding: 2rem 0;
+      width: 10%;
+
+    }
+
+    .singertitle {
+
+      color: #fff;
+      font-size: 19px;
+      font-weight: 100;
+      letter-spacing: 2px;
+      line-height: 1.7;
+      padding: 1rem 0;
+      text-transform: uppercase;
+
+    }
+
+    .singertext {
+
+      color: #798285;
+      font-size: 14px;
+      margin: 0 auto;
+      letter-spacing: 1px;
+      line-height: 1.5;
+      padding: 2rem 0;
+      width: 50%;
+
+    }
+
+    .singertext2 {
+
+      color: #565e61;
+      font-size: 14px;
+      left: 1px;
+      padding: 2rem 0;
+
+    }
+  }
+}
+.slick-dots {
+
+  li {
+
+    button {
+
+      background: #fff;
+      border-radius: 10px;
+      height: 14px;
+      width: 14px;
+
+      &:before {
+
+        content: " ";
+        background: #000000;
+        border: 1px #fff solid;
+        border-radius: 10px;
+        height: 12px;
+        width: 12px;
+
+      }
+    }
+  }
+}

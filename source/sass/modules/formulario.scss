@@ -1,0 +1,113 @@
+.musician{
+
+  &__form {
+
+    background-image: url(../images/image-form.png);
+    background-repeat: no-repeat;
+    margin: 3rem 0 0;
+    // background-size: cover;
+  }
+
+  &__contactcontent {
+
+    width: 50%;
+    margin: auto 0 auto auto;
+    padding: 8rem 0 12rem 3rem;
+
+    .contactimages {
+
+      padding: 0 0 2rem;
+    }
+
+    .contacttext, .contactphone {
+
+      color: #7b7b7b;
+      font-size: 14px;
+      line-height: 2;
+    }
+  }
+
+  &__contact {
+
+    margin: auto;
+    max-width: 85%;
+    width: 90%;
+    padding: 2rem 7rem 0 0;
+  }
+
+  &__contact {
+
+    &--border {
+
+      border-left: 2px #000 solid;
+      padding: 0;
+      padding-left: 2rem;
+      width: 15%;
+    }
+
+    display: inline-block;
+    vertical-align: middle;
+
+    .forminput {
+
+      position: relative;
+      margin-bottom: 32px;
+    }
+
+    label {
+
+      color: #798285;
+      transition: all 0.3s ease;
+      font-size: 16px;
+      line-height: 16px;
+      position: absolute;
+      top: 28px;
+      left: 0;
+      -webkit-transition: all 0.3s ease;
+    }
+
+    input {
+
+      color: #141414;
+      font-size: 20px;
+      width: 100%;
+      outline: none;
+      padding: 15px 0 0;
+      height: 50px;
+      background: none;
+      border: none;
+      border-bottom: 1px solid rgb(86, 113, 104);
+      transition: all 0.1s ease;
+
+      &::focus {
+
+        outline: none;
+        border-bottom: 2px solid white;
+      }
+
+      &:active {
+
+      outline: none;
+      border-bottom: 2px solid white;}
+    }
+
+    .contactsend {
+
+      border: none;
+      text-transform: uppercase;
+      font-weight: 800;
+      cursor: pointer;
+      width: 20%;
+    }
+  }
+
+  &__contacticon {
+
+    padding: 0;
+
+    &--border {
+
+      padding: 4rem 0;
+    }
+  }
+}

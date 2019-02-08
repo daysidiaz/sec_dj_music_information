@@ -1,0 +1,180 @@
+.musician {
+
+  &__compositions {
+
+    padding: 0 0 3rem;
+    margin: 0 auto;
+    width: 1495px;
+  }
+
+  &__titlelatter {
+
+    text-align: center;
+    padding: 8rem 0;
+
+    .textlatter {
+
+      color: #798285;
+      font-size: 14px;
+      margin: 0 auto;
+      letter-spacing: 2px;
+      line-height: 1.5;
+      padding: 3rem 0 0;
+      text-align: center;
+      width: 60%;
+    }
+  }
+
+  &__music {
+
+    background: #f5f6f6;
+    box-sizing: border-box;
+    margin: 0 0 3rem;
+  }
+
+  &__boxmusic {
+
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+
+    video {
+
+      width: 747px;
+    }
+
+    &--padding {
+
+      padding: 2rem;
+      position: relative;
+
+      &:after {
+
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: -16px;
+        margin-top: -8px;
+        border-top: 13px solid transparent;
+        border-left: 16px solid #f5f6f6;
+        border-bottom: 13px solid transparent;
+      }
+    }
+
+
+
+    &--padding2 {
+
+      padding: 2rem;
+      background: #f5f6f6;
+      position: relative;
+
+      &:after {
+
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: -16px;
+        margin-top: -8px;
+        border-top: 13px solid transparent;
+        border-right: 16px solid #f5f6f6;
+        border-bottom: 13px solid transparent;
+      }
+    }
+
+    .daysmusic {
+
+      border-bottom: 2px solid #000;
+      color: #b2b4b4;
+      font-size: 14px;
+      font-weight: 900;
+      padding: 0 0 10px;
+      width: 72%;
+    }
+
+    .namemusic {
+
+      color: #000;
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 10px 0 0;
+    }
+
+    .titlemusic {
+
+      font-size: 23px;
+      padding: 2rem 0;
+    }
+
+    .descriptionmusic {
+
+      color: #798285;
+      font-size: 14px;
+      padding: 0 0 2rem;
+      line-height: 1.8;
+      letter-spacing: 1px;
+    }
+
+    .informationmusic {
+
+      .inforlink {
+
+        display: inline-block;
+        width: 30%;
+        vertical-align: bottom;
+
+        &--align {
+
+          text-align: center;
+          width: 70%
+        }
+
+        &__text {
+
+          border: 1px solid #000;
+          color: #000;
+          font-size: 14px;
+          font-weight: 900;
+          padding: 14px 0;
+          text-align: center;
+          // width: 65%;
+        }
+
+        .icononline {
+
+          padding: 0 0 0 14px;
+        }
+
+        .visiticon {
+
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        .visittext {
+
+          color: #abacac;
+          display: inline-block;
+          font-size: 12px;
+          padding: 0 0 0 10px;
+          vertical-align: middle;
+        }
+
+        .visit {
+
+          &__box {
+
+            display: inline-block;
+            padding: 0 0 5px;
+            vertical-align: bottom;
+            width: 73px;
+
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.musician {
+
+  &__container {
+
+    margin: 0 auto;
+    width: 1200px;
+  }
+
+  &__header {
+
+    background-color: #00080c2e;
+    height: 62px;
+    left: 0;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
+    .menu {
+
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      padding: 21px 0;
+
+      .option {
+
+        color: #606060;
+        font-size: 17px;
+
+        &--active {
+
+          border-bottom: 3px solid #000;
+          color: #000;
+          padding: 0 0 7px;
+        }
+      }
+    }
+  }
+}

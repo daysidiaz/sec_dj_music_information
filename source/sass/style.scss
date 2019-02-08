@@ -1,0 +1,29 @@
+@import "globals/normalize";
+@import "globals/variables";
+@import "globals/typography";
+@import "globals/mixins";
+@import "globals/global";
+
+@import "extras/scrollbar";
+@import "extras/selection";
+@import "extras/keyframes";
+@import "extras/slick";
+@import "extras/slick-theme";
+
+#musician {
+
+  @import "modules/header";
+  @import "modules/banner";
+  @import "modules/discography";
+  @import "modules/concert";
+  @import "modules/compositions";
+  @import "modules/carousel";
+  @import "modules/chill_nation";
+  @import "modules/events";
+  @import "modules/history";
+  @import "modules/formulario";
+  @import "modules/footer";
+  @import "modules/layout";
+
+}
+
