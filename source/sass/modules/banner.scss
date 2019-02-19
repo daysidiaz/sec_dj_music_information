@@ -13,6 +13,20 @@
       height: 760px;
     }
 
+    @media only screen and (max-width: 1024px) {
+
+      background-size: cover;
+      background-position: center;
+      height: 600px;
+    }
+
+    @media only screen and (max-width: 480px) {
+
+      // background-size: cover;
+      // background-position: center;
+      height: 450px;
+    }
+
     .musician {
 
       &__logo {
@@ -20,6 +34,41 @@
         text-align: center;
         padding: 13rem 0 0;
 
+        @media only screen and (max-width: 1024px) {
+
+          padding: 6.5rem 0 0;
+        }
+
+        @media only screen and (max-width: 480px) {
+
+          padding: 4.5rem 0 0;
+        }
+
+        .logodj {
+
+          @media only screen and (max-width: 1024px) {
+
+            // background-color: #0000002b;
+            border-radius: 50%;
+            width: 36%;
+            padding: 25px;
+          }
+
+          @media only screen and (max-width: 768px) {
+
+            width: 46%;
+          }
+
+          @media only screen and (max-width: 480px) {
+
+            width: 62%;
+          }
+
+          @media only screen and (max-width: 360px) {
+
+            width: 82%;
+          }
+        }
       }
     }
   }
