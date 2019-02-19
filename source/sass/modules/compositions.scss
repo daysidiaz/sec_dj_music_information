@@ -5,6 +5,11 @@
     padding: 0 0 3rem;
     margin: 0 auto;
     width: 1495px;
+
+    @media only screen and (max-width: 1366px) {
+
+      width: 1200px
+    }
   }
 
   &__titlelatter {
@@ -41,12 +46,22 @@
     video {
 
       width: 747px;
+
+      @media only screen and (max-width: 1366px) {
+
+        width: 100%;
+      }
     }
 
     &--padding {
 
       padding: 2rem;
       position: relative;
+
+      @media only screen and (max-width: 1366px) {
+
+        padding: 1rem 1rem 1rem 2rem;
+      }
 
       &:after {
 
@@ -106,7 +121,7 @@
     .titlemusic {
 
       font-size: 23px;
-      padding: 2rem 0;
+      padding: 1rem 0;
     }
 
     .descriptionmusic {

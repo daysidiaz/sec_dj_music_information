@@ -4,15 +4,26 @@
 
     background-image: url(../images/image-form.png);
     background-repeat: no-repeat;
+    height: 862px;
     margin: 3rem 0 0;
-    // background-size: cover;
+
+    @media only screen and (max-width: 1366px) {
+
+      background-size: cover;
+      height: 636px;
+    }
   }
 
   &__contactcontent {
 
     width: 50%;
     margin: auto 0 auto auto;
-    padding: 8rem 0 12rem 3rem;
+    padding: 8rem 0 0 3rem;
+
+    @media only screen and (max-width: 1366px) {
+
+      padding: 3rem 0 0 3rem;
+    }
 
     .contactimages {
 
@@ -33,9 +44,11 @@
     max-width: 85%;
     width: 90%;
     padding: 2rem 7rem 0 0;
-  }
 
-  &__contact {
+    @media only screen and (max-width: 1366px) {
+
+      padding: 0 8rem 0rem 0;
+    }
 
     &--border {
 

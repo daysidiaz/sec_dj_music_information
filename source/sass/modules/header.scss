@@ -2,11 +2,11 @@
 
   &__container {
 
-    margin: 0 auto;
-    width: 1200px;
+    height: 100%;
   }
 
   &__header {
+
 
     background-color: #00080c2e;
     height: 62px;
@@ -17,6 +17,46 @@
     width: 100%;
     z-index: 999;
 
+    @media only screen and (max-width: 1024px) {
+
+      background-color: transparent;
+    }
+
+    &__container {
+
+      @media only screen and (max-width: 1024px) {
+
+        align-items: center;
+        display: flex;
+        height: 100%;
+        width: 5%;
+        // justify-content: center;
+      }
+    }
+
+    &__menu {
+
+      height: 100%;
+      bottom: 0;
+      left: 0;
+      transition: left 0.25s ease-out,
+              bottom 0.25s ease-out;
+
+      @media only screen and (max-width: 1024px) {
+
+        // background: #00373e;
+        background-image: url(../images/image_menu-responsive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        height: 100vh;
+        left: 100%;
+        position: fixed;
+        width: 100%;
+        padding: 10rem 0;
+      }
+    }
+
     .menu {
 
       align-items: center;
@@ -24,16 +64,131 @@
       justify-content: space-between;
       padding: 21px 0;
 
+      @media only screen and (max-width: 1024px) {
+
+        flex-direction: column;
+      }
+
+      @media only screen and (max-width: 480px) {
+
+        padding: 4rem 0;
+      }
+
       .option {
 
         color: #606060;
         font-size: 17px;
+
+        @media only screen and (max-width: 1024px) {
+
+          color: #fff;
+          font-size: 18px;
+          letter-spacing: 10px;
+        }
+
+        @media only screen and (max-width: 480px) {
+
+
+          font-size: 15px;
+          letter-spacing: 6px;
+        }
 
         &--active {
 
           border-bottom: 3px solid #000;
           color: #000;
           padding: 0 0 7px;
+
+          @media only screen and (max-width: 1024px) {
+
+            border-bottom: 3px solid #b7ff43;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    &__close {
+
+      display: none;
+
+      @media only screen and (max-width: 1025px) {
+
+        display: block;
+      }
+
+      .close {
+
+        cursor: pointer;
+
+        span {
+
+          background: #000;
+          display: block;
+          height: 5px;
+          width: 60px;
+
+          &:not(:first-child):not(:last-child) {
+
+            margin: 5px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+#musiciancheck {
+
+  &:checked {
+
+    & + .musician__header {
+
+      .musician {
+
+        &__header {
+
+          &__close {
+
+            position: relative;
+            z-index: 9999;
+
+            span {
+
+              background-color: #fff;
+              transition: transform 0.25s ease-out;
+
+              &:first-child {
+
+                transform: rotate(45deg) translate(4px);
+              }
+
+              &:last-child {
+
+                transform: rotate(-45deg) translate(4px);
+              }
+
+              &:not(:first-child):not(:last-child) {
+
+                height: 0;
+                margin: 0;
+                width: 0;
+              }
+            }
+          }
+
+          &__menu {
+
+            bottom: -0;
+            left: 0;
+            transition: left 0.25s ease-out,
+              bottom 0.25s ease-out;
+
+              @media only screen and (max-width: 768px) {
+
+                background-position: center;
+              }
+          }
         }
       }
     }
