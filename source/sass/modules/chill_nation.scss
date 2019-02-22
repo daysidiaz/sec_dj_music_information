@@ -7,18 +7,22 @@
 
   &__nationcontent {
 
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 0 1.5rem;
+    text-align: center;
   }
 
   &__nationboxes {
 
     position: relative;
     display: inline-block;
+    margin: 8px;
     vertical-align: middle;
     width: 383px;
+
+    @media only screen and (max-width: 360px) {
+
+      width: auto;
+      margin: 0 0 24px;
+    }
 
     .nationimages {
 
@@ -30,6 +34,7 @@
 
     padding: 2rem;
     position: absolute;
+    text-align: left;
     left: 0;
     top: 0;
 

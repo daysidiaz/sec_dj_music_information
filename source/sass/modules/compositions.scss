@@ -8,7 +8,12 @@
 
     @media only screen and (max-width: 1366px) {
 
-      width: 1200px
+      width: 1200px;
+    }
+
+    @media only screen and (max-width: 1366px) {
+
+      width: 920px;
     }
   }
 
@@ -16,6 +21,11 @@
 
     text-align: center;
     padding: 8rem 0;
+
+    @media only screen and (max-width: 1024px) {
+
+      padding: 6rem 0;
+    }
 
     .textlatter {
 
@@ -43,6 +53,12 @@
     width: 50%;
     vertical-align: middle;
 
+    @media only screen and (max-width: 1024px) {
+
+      width: 100%;
+      display: block;
+    }
+
     video {
 
       width: 747px;
@@ -66,14 +82,24 @@
       &:after {
 
         content: "";
-        display: block;
-        position: absolute;
-        top: 50%;
-        right: -16px;
-        margin-top: -8px;
         border-top: 13px solid transparent;
         border-left: 16px solid #f5f6f6;
         border-bottom: 13px solid transparent;
+        display: block;
+        margin-top: -8px;
+        position: absolute;
+        right: -16px;
+        top: 50%;
+
+        @media only screen and (max-width: 1024px) {
+
+          border-top: 13px solid #f5f6f6;
+          border-left: 16px solid transparent;
+          border-right: 13px solid transparent;
+          margin-top: 0;
+          right: 50%;
+          top: 100%;
+        }
       }
     }
 
@@ -96,6 +122,16 @@
         border-top: 13px solid transparent;
         border-right: 16px solid #f5f6f6;
         border-bottom: 13px solid transparent;
+
+        @media only screen and (max-width: 1024px) {
+
+          border-right: 16px solid #f4433600;
+          border-bottom: 13px solid #f5f6f6;
+          border-left: 13px solid #ffeb3b00;
+          left: 50%;
+          margin-top: -26px;
+          top: 0;
+        }
       }
     }
 
@@ -141,10 +177,21 @@
         width: 30%;
         vertical-align: bottom;
 
+        @media only screen and (max-width: 1024px) {
+
+          width: 20%;
+        }
+
         &--align {
 
           text-align: center;
-          width: 70%
+          width: 70%;
+
+          @media only screen and (max-width: 1024px) {
+
+            text-align: right;
+            width: 80%;
+          }
         }
 
         &__text {

@@ -36,6 +36,13 @@
       padding: 16rem 0 0;
     }
 
+    @media only screen and (max-width: 1024px) {
+
+      background-position: center;
+      background-size: cover;
+      padding: 14rem 0 0;
+    }
+
     .daystours {
 
       border-bottom: 2px solid #000;
@@ -77,6 +84,12 @@
         padding: 1rem;
         text-align: center;
         width: 25%;
+
+        @media only screen and (max-width: 1024px) {
+
+          width: 30%;
+          background-color: #ffffffad;
+        }
         .icononline {
 
           padding: 0 0 0 20px;
@@ -96,6 +109,11 @@
       padding: 0 0 3rem 5rem;
     }
 
+    @media only screen and (max-width: 1024px) {
+
+      padding: 0 0 3rem 0;
+    }
+
     &--withtours {
 
       padding: 0 0 4rem;
@@ -104,6 +122,11 @@
       @media only screen and (max-width: 1366px) {
 
         padding: 0 0 4rem 5rem;
+      }
+
+      @media only screen and (max-width: 1024px) {
+
+        padding: 0 0 3rem 0;
       }
     }
   }
