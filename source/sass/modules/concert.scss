@@ -20,6 +20,16 @@
       padding: 2rem 0 3rem;
       text-align: center;
       width: 60%;
+
+      @media only screen and (max-width: 768px) {
+
+        width: 100%;
+      }
+
+      @media only screen and (max-width: 480px) {
+
+        padding: 2rem 0 0;
+      }
     }
   }
 
@@ -41,6 +51,11 @@
       background-position: center;
       background-size: cover;
       padding: 14rem 0 0;
+    }
+
+    @media only screen and (max-width: 480px) {
+
+      background-position-x: 40%;
     }
 
     .daystours {
@@ -72,6 +87,11 @@
       font-size: 14px;
       line-height: 1.5;
       padding: 1rem 0 2rem;
+
+      @media only screen and (max-width: 480px) {
+
+        text-align: justify;
+      }
     }
     .buy {
 
@@ -90,6 +110,17 @@
           width: 30%;
           background-color: #ffffffad;
         }
+
+        @media only screen and (max-width: 1024px) {
+
+          width: 40%;
+        }
+
+        @media only screen and (max-width: 1024px) {
+
+          width: 60%;
+        }
+
         .icononline {
 
           padding: 0 0 0 20px;
@@ -127,6 +158,16 @@
       @media only screen and (max-width: 1024px) {
 
         padding: 0 0 3rem 0;
+      }
+
+      @media only screen and (max-width: 768px) {
+
+        padding: 0 0 5rem 0;
+      }
+
+      @media only screen and (max-width: 480px) {
+
+        width: 100%;
       }
     }
   }

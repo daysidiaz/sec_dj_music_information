@@ -15,6 +15,21 @@
 
       width: 920px;
     }
+
+    @media only screen and (max-width: 768px) {
+
+      width: 690px;
+    }
+
+    @media only screen and (max-width: 480px) {
+
+      width: 400px;
+    }
+
+    @media only screen and (max-width: 360px) {
+
+      width: 300px;
+    }
   }
 
   &__titlelatter {
@@ -37,6 +52,11 @@
       padding: 3rem 0 0;
       text-align: center;
       width: 60%;
+
+      @media only screen and (max-width: 480px) {
+
+        width: 100%
+      }
     }
   }
 
@@ -59,6 +79,24 @@
       display: block;
     }
 
+    &--hidebox {
+
+      @media only screen and (max-width: 1024px) {
+
+        display: none;
+      }
+    }
+
+    &--hidebox2 {
+
+      display: none;
+
+      @media only screen and (max-width: 1024px) {
+
+        display: block;
+      }
+    }
+
     video {
 
       width: 747px;
@@ -77,6 +115,11 @@
       @media only screen and (max-width: 1366px) {
 
         padding: 1rem 1rem 1rem 2rem;
+      }
+
+      @media only screen and (max-width: 1366px) {
+
+        padding: 1rem;
       }
 
       &:after {
@@ -125,12 +168,13 @@
 
         @media only screen and (max-width: 1024px) {
 
-          border-right: 16px solid #f4433600;
-          border-bottom: 13px solid #f5f6f6;
-          border-left: 13px solid #ffeb3b00;
+          border-right: 16px solid #ffffff00;
+          border-left: 13px solid #ffffff00;
+          border-top: 13px solid #f5f6f6;
           left: 50%;
-          margin-top: -26px;
-          top: 0;
+          margin-top: 0;
+          bottom: 0;
+          top: 100%;
         }
       }
     }
@@ -158,6 +202,11 @@
 
       font-size: 23px;
       padding: 1rem 0;
+
+      @media only screen and (max-width: 360px) {
+
+        font-size: 18px;
+      }
     }
 
     .descriptionmusic {
@@ -167,6 +216,11 @@
       padding: 0 0 2rem;
       line-height: 1.8;
       letter-spacing: 1px;
+
+      @media only screen and (max-width: 480px) {
+
+        text-align: justify;
+      }
     }
 
     .informationmusic {
@@ -182,6 +236,18 @@
           width: 20%;
         }
 
+        @media only screen and (max-width: 768px) {
+
+          width: 30%;
+        }
+
+        @media only screen and (max-width: 480px) {
+
+          display: block;
+          margin: 0 auto;
+          width: 60%;
+        }
+
         &--align {
 
           text-align: center;
@@ -191,6 +257,19 @@
 
             text-align: right;
             width: 80%;
+          }
+
+          @media only screen and (max-width: 768px) {
+
+            text-align: right;
+            width: 70%;
+          }
+
+          @media only screen and (max-width: 480px) {
+
+            padding: 1.5rem 0;
+            text-align: center;
+            width: 100%;
           }
         }
 
@@ -223,6 +302,11 @@
           font-size: 12px;
           padding: 0 0 0 10px;
           vertical-align: middle;
+
+          @media only screen and (max-width: 360px) {
+
+            padding: 0 0 0 2px;
+          }
         }
 
         .visit {
@@ -234,6 +318,10 @@
             vertical-align: bottom;
             width: 73px;
 
+            @media only screen and (max-width: 360px) {
+
+              width: 60px;
+            }
           }
         }
       }
